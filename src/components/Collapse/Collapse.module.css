@@ -1,0 +1,40 @@
+:root {
+  --border: 1px solid rgb(202, 202, 202);
+  --radius: 5px;
+  --margin: 16px;
+  --padding: 10px;
+}
+
+.container {
+  border: var(--border);
+  padding: calc(var(--padding) * 2);
+  border-radius: var(--radius);
+}
+
+.btn {
+  width: 100px;
+  padding: var(--padding);
+  margin-right: var(--margin);
+  background-color: #0b5ed7;
+  color: #fff;
+  border-radius: var(--radius);
+  border: none;
+  cursor: pointer;
+}
+
+.collapse {
+  height: 0;
+  overflow: hidden;
+  transition: height 0.3s ease-in-out;
+}
+
+.collapse.open {
+  height: 100px;
+}
+
+.card {
+  margin-top: var(--margin);
+  padding: var(--margin);
+  border: var(--border);
+  border-radius: var(--radius);
+}
